@@ -6,7 +6,9 @@ function getResult(){
   var url = "https://poller-kristian.herokuapp.com/result"
   $.getJSON(url, {question: 'whatisyourquest'}, function(json, textStatus) {
     console.log('Result', json);
+    new Chartkick.ColumnChart('chartstuffs', json)
   });
+
 }
 
 function submitAnswer(element){

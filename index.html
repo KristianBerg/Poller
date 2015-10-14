@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>Poller client</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
-    <script src="app.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    <script src="js/chartkick.js" charset="utf-8"></script>
   </head>
   <body>
     <h1>What, is your quest?</h1>
@@ -12,5 +14,7 @@
     <button onclick="submitAnswer(this)" data-value="chicken">Chicken!</button>
     <button onclick="submitAnswer(this)" data-value="for glory">Glory!</button>
     <button onclick="getResult()">Results</button>
+
+    <div id="chartstuffs"></div>
   </body>
 </html>
